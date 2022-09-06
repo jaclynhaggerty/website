@@ -1,0 +1,10 @@
+.product {
+  display: flex;
+  justify-content: center;
+}
+.card-writting {
+  max-width: 20%;
+}
+
+.product-image {
+}
