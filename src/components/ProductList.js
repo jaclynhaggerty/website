@@ -23,6 +23,7 @@ export default function ProductList() {
           price={product.price}
           mainImage={product.mainImage}
           description={product.description}
+          id={product.id}
         />
       ))}
     </div>

@@ -1,10 +1,22 @@
 .product {
   display: flex;
-  justify-content: center;
+  max-width: 60%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-shadow: 0 2px 3px #000;
 }
 .card-writting {
-  max-width: 20%;
+  max-width: 50%;
 }
 
 .product-image {
+  margin: 90px;
+  margin-left: 1px;
+}
+
+.products-icons {
+  inline-size: 50px;
+  margin: 20px;
+  display: flex;
 }

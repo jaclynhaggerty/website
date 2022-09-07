@@ -20,11 +20,12 @@ function App() {
       <NavBar />
       <Header />
       <Routes>
-        <Route path="/login" element={<Login setUser={setUser}/>}/>
+        <Route path="/login" element={<Login setUser={setUser} />} />
+      </Routes>
+      <Routes>
         <Route path="/home" element={<ProductList />} />
         <Route path="/product" element={<Product />} />
         <Route path="/shop" element={<Shop />} />
-
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/details/:id" element={<Details />} />
