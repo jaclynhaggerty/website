@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [searchText, setSearchText] = useState("");
@@ -12,9 +13,7 @@ const Navbar = () => {
     event.preventDefault();
     console.log("clicked");
   }
-  function goToUser() {
-    console.log("user");
-  }
+  
   function goToLike() {
     console.log("likes");
   }
@@ -101,10 +100,9 @@ const Navbar = () => {
       </div>
 
       <div className="icons">
-        <div
-          onClick={() => {
-            goToUser();
-          }}
+        <Link to="/login">
+         <div
+        
           className="icon"
         >
           <svg
@@ -116,6 +114,8 @@ const Navbar = () => {
             <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
           </svg>
         </div>
+        </Link>
+       
         <div
           onClick={() => {
             goToShop();

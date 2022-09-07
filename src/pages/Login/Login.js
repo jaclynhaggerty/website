@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {  useState } from "react";
 import axios from "axios";
 
 
@@ -6,24 +6,28 @@ const Login = (props) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [response, setResponse] = useState({})
+    const[error, setError] = useState({})
 
-    const onSubmit = async () => {
-        const user = await axios.post(
-            'http://localhost:4000/users',
-            {
-                name,
-                email,
-                password
-            }
-        )
-        if (!user) {
-            console.log("Unable to create user! Please try again.")
-        }
-        else {
-            props.setUser(user);
-            // How to navigate to home page?
-        }
+    const requestUser = async ()=>{ 
+        try {  
+            const user = await axios.post('http://localhost:4000/users',{
+            name,
+            email,
+            password})
+
+            setResponse(user.data)
+       
+     } catch (error) {
+    setError(error)
+    }}
+
+    const onSubmit =  (event) => {
+       event.preventDefault() //Just to avoid the page from refreshing
+      requestUser()
+       
     }
+
     return (
         <div>
             <form onSubmit={onSubmit}>
@@ -39,7 +43,7 @@ const Login = (props) => {
                     Password:
                     <input type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </label>
-                <input type="submit" value="Submit"/>
+                <button type="submit" value="Submit">Submit</button>
             </form>
         </div>
     )
