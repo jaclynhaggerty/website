@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
+import Footer from "./components/footer";
 // import Home from "./pages/home";
 import Login from "./pages/Login/Login";
 import Shop from "./pages/shop";
@@ -20,7 +21,7 @@ function App() {
       <NavBar />
       <Header />
       <Routes>
-        <Route path="/login" element={<Login setUser={setUser}/>}/>
+        <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/home" element={<ProductList />} />
         <Route path="/product" element={<Product />} />
         <Route path="/shop" element={<Shop />} />
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/details/:id" element={<Details />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
