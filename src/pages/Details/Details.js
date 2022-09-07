@@ -6,6 +6,7 @@ import StarRating from '../../components/starRating';
 import { IconName } from "react-icons/fa";
 
 
+
 function Details() {
     const routeParams = useParams();
     const [details, setDetails] = useState(null);
