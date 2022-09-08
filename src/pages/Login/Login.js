@@ -33,7 +33,7 @@ const Login = (props) => {
       style={{ background: "Lavender", marginRight: 250, marginLeft: 250 }}
     >
       <div className="login">
-        <h2 style={{ paddingTop: 20 }}> Login </h2>
+        <h2 style={{ paddingTop: 20 }}> Signin </h2>
         <p style={{ color: "grey" }}>
           {" "}
           please login using account detail bellow.
@@ -80,7 +80,7 @@ const Login = (props) => {
                 background: "DeepPink",
               }}
             >
-              Sign In
+              Signin
             </button>
           </div>
         </form>

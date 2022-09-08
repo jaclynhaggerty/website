@@ -15,19 +15,11 @@ const Footer = () => {
         <p style={{ fontSize: 30 }}>
           <span>The </span>Shop
         </p>
-        <form onSubmit={handleSubmit}>
-          <label>
-            <input type="text" onChange={handleChange} />
-          </label>
-
-          <button type="submit" value="Submit">
-            Signup
-          </button>
-        </form>
       </div>
       <div>
-        <h3> Categories</h3>
-        <ul>
+        <ul className="list">
+          {" "}
+          <h3> Categories</h3>
           <li>Laptops and Computers</li>
           <li>Cameras and Photography</li>
           <li>Smart phones and Tablets</li>
@@ -36,8 +28,8 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h3> My Account</h3>
-        <ul>
+        <ul className="list">
+          <h3> My Account</h3>
           <li> My Account</li>
           <li> Discount</li>
           <li> Returns</li>
