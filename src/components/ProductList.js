@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import "./ProductList.css"
 
+// pagination
+
 export default function ProductList() {
   const [products, setProducts] = useState([]);
   const [limit, setLimit] = useState(5);
@@ -47,6 +49,7 @@ export default function ProductList() {
           id={product.id}
         />
       ))}
+      {/* pagination */}
       <div className="paging">
         <button onClick={previousProduct}>Previous</button>
         <p>Page {(offset/limit) + 1} of {pages}</p>

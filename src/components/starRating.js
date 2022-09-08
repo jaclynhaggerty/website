@@ -2,8 +2,8 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 import "./star.css";
-const StarRating = () => {
-  const [rating, setRating] = useState(null);
+const StarRating = (props) => {
+  const [rating, setRating] = useState(props.rating);
 
   return (
     <div className="star">
