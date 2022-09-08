@@ -2,18 +2,18 @@
 
 }
 
-.product {
+.product-details {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.product .left, .product .right {
+.product-details .left, .product-details .right {
     padding: 10px;
 }
 
-.product .price {
+.product-details .price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,4 +53,17 @@
 .description .sections p {
     color: #A9ACC6;
     font-size: 16px;
+}
+
+.details-button {
+    border-radius: 8px;
+    color: #1D3178;
+    background-color: #FFFFFF;
+}
+
+.cart-button {
+    color: #FFFFFF;
+    background-color: #FF3EB2;
+    border-color: #FF3EB2;
+    border-radius: 8px;
 }

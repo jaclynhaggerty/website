@@ -80,13 +80,13 @@ const Login = (props) => {
                 background: "DeepPink",
               }}
             >
-              Signin
+              Sign In
             </button>
           </div>
         </form>
         <p style={{ color: "grey", lineHeight: 5 }}>
           {" "}
-          don't have an account? create account.{" "}
+          Don't have an account? Create account.{" "}
         </p>
       </div>
     </div>
