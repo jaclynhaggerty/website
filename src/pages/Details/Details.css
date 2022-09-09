@@ -1,62 +1,68 @@
 .product-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.product-details .left, .product-details .right {
-    padding: 10px;
+.product-details .left,
+.product-details .right {
+  padding: 10px;
 }
 
 .product-details .price {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+     display: flex;
+  flex-direction: row;
+  align-items: center;
     margin-top: -10px ;
+
 }
 
 .image1 {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
 }
 
 .description {
+
+
     background-color: #F9F8FE;
     margin-top: 80px;
+
 }
 
 .description .card {
-    display: flex;
-    flex-direction: column;
-    max-width: 750px;
-    padding-top: 10px;
-    padding-bottom: 70px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  margin: auto;
 }
 
 .description .sections {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .description .sections h3 {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #151875;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #151875;
 }
 
 .description .sections p {
-    color: #A9ACC6;
-    font-size: 16px;
+  color: #a9acc6;
+  font-size: 16px;
 }
 
 .details-button {
-    border-radius: 8px;
-    color: #1D3178;
-    background-color: #FFFFFF;
+  border-radius: 8px;
+  color: #1d3178;
+  background-color: #ffffff;
 }
 
 .details-reviewbutton {
@@ -69,6 +75,13 @@
 }
 
 .cart-button {
+
+  color: #ffffff;
+  background-color: #ff3eb2;
+  border-color: #ff3eb2;
+  border-radius: 8px;
+}
+
     color: #FFFFFF;
     background-color: #FF3EB2;
     border-color: #FF3EB2;
@@ -96,3 +109,4 @@
     word-wrap: break-word; 
     word-break: break-word;
 }
+

@@ -18,6 +18,7 @@ const Footer = () => {
       </div>
       <div>
         <ul className="list">
+
           <h3> Categories</h3>
           <li>Laptops and Computers</li>
           <li>Cameras and Photography</li>
