@@ -64,3 +64,6 @@ body {
   height: 2rem;
   padding-left: 30;
 }
+.list {
+  text-align: left;
+}
