@@ -18,6 +18,7 @@ export default function ProductCard(props) {
         <StarRating />
         <h6>{props.price} euro</h6>
         <h6>{props.description}</h6>
+        <h6>{props.categoryId}</h6>
         <div className="products-icons">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -11,9 +11,12 @@
 }
 
 .product-details .price {
-  display: flex;
+
+     display: flex;
   flex-direction: row;
   align-items: center;
+    margin-top: -10px ;
+
 }
 
 .image1 {
@@ -24,7 +27,11 @@
 }
 
 .description {
-  background-color: #f9f8fe;
+
+
+    background-color: #F9F8FE;
+    margin-top: 80px;
+
 }
 
 .description .card {
@@ -58,9 +65,48 @@
   background-color: #ffffff;
 }
 
+.details-reviewbutton {
+    border-radius: 8px;
+    height: 20px;
+    width:90px;
+    margin-left: 10px;
+    margin-top: 22px;
+    background-color: #FFFFFF;
+}
+
 .cart-button {
+
   color: #ffffff;
   background-color: #ff3eb2;
   border-color: #ff3eb2;
   border-radius: 8px;
 }
+
+    color: #FFFFFF;
+    background-color: #FF3EB2;
+    border-color: #FF3EB2;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: -85px;
+}
+
+.rating {
+    display: flex;
+    margin-top: -20px;
+}
+
+.icons2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 120px; 
+    margin-top: -60px; 
+}
+
+.name {
+    font-size: 20px;
+    width: 250px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
