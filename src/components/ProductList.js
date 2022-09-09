@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import "./ProductList.css";
 import CategoriesList from "./CategoriesList";
+// pagination
+
 export default function ProductList() {
   const [products, setProducts] = useState([]);
   const [limit, setLimit] = useState(5);
@@ -52,6 +54,7 @@ export default function ProductList() {
           categoryId={product.categoryId}
         />
       ))}
+      {/* pagination */}
       <div className="paging">
         <button onClick={previousProduct}>Previous</button>
         <p>
